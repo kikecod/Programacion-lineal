@@ -1,46 +1,70 @@
-# Programacion-lineal
-Este proyecto esta destinado a resolver ejercicios de maximizacion y minimizacion
-Para clonar este Repositorio use
+# **Programación Lineal**  
+_Un proyecto para resolver ejercicios de **maximización** y **minimización** de manera sencilla y eficiente._
 
+---
+
+## **Clonar el repositorio**
+Para obtener una copia local de este proyecto, asegúrate de tener instalado **Git** y ejecuta:
+
+```bash
 git clone https://github.com/kikecod/Programacion-lineal
+```
 
-Asegurese que tenga instalado git, una vez clonado el proyecto puede vayase a la carpeta api y cree un entorno virtual
+## **Configuración del Backend (API)**
+1. Navega a la carpeta api:
 
+```bash
+cd api
+```
+2. Cree un entorno virtual
+   Asegúrate de tener instalado Python y ejecuta:
+
+```bash
 python -m venv venv
+```
+3.  Activa el entorno virtual:
 
-Y luego active el entorno virtual
-
+```bash
 .\venv\Scripts\activate
+```
+Si aparece un error, ejecuta:
 
-en caso de que tenga un error ejecute este comando
-
+```bash
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-
-y luego 
-
+```
+Luego intenta activar nuevamente:
+```bash
 .\venv\Scripts\activate
-
-asegurese tener instalado pip e instale las siguientes librerias
-
+```
+4. Instala las dependencias
+   Asegúrate de tener instalado pip y ejecuta:
+```bash
 pip install fastapi uvicorn pydantic pulp
+```
+5. Inicia la API:
+```bash
+   uvicorn main:app --reload
+```
 
-y por ultimo, para levantar la api haga correr 
-
-uvicorn main:app --reload
-
-y vaya a la siguiente direccion http://127.0.0.1:8000/docs
-
-Ahora vuelva a la carpeta raiz con cd .. , y asegurese tener instalado npm, corra el siguiente comando
-
-npm install  
-
-En caso de tener errores ingrese el siguiente comando
-
+## **Configuración del Frontend**
+1. Vuelve a la carpeta raiz
+```bash
+cd ..
+```
+2. Instala dependencias
+   Asegúrate de tener instalado Node.js y ejecuta:
+```bash
+npm install
+```
+3. Solucion de problemas(si lo hay)
+   Si encuentras errores, corre:
+```bash
 npm audit fix
-
-para levantar la pagina use 
-
-npm run dev 
-
-http://localhost:5173/ vaya a esa direccion y vera la pagina
-
+```
+4. Inicia el servidor del frontend:
+  Para iniciar la página web, ejecuta:Para iniciar la página web, ejecuta:
+```bash
+npm run dev
+```
+¡Gracias por fijarte y seguir los pasos! 💻✨
+=)
